@@ -1,0 +1,31 @@
+[
+    {
+        "id":"1",
+        "jobType":"Frontend Developer",
+        "briefDetail":"We are looking for a skilled developer to manage our site... "
+      
+    },
+
+    {
+        "id":"2",
+        "jobType":"Frontend Developer",
+        "briefDetail":"We are looking for a skilled developer to manage our site... "
+    },
+
+    {
+        "id":"3",
+        "jobType":"Frontend Developer",
+        "briefDetail":"We are looking for a skilled developer to manage our site... "
+    },
+
+    {
+        "id":"4",
+        "jobType":"Frontend Developer",
+        "briefDetail":"We are looking for a skilled developer to manage our site... "
+    },
+    {
+        "id":"5",
+        "jobType":"Frontend Developer",
+        "briefDetail":"We are looking for a skilled developer to manage our site... "
+    }
+]
