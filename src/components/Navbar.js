@@ -1,16 +1,24 @@
 import React from 'react'
-import logo from '../images/mestlogo_white.png'
-import '../styles/Navbar.css'
+import logo from '../images/dark.png'
+import {Link} from "react-router-dom"
 
 function Navbar() {
+
+    let imgStyle={
+        width:"100px",
+        height:"20px",
+     
+
+    }
     return (
 
       
-    <nav className='navbar navbar-expand-lg navbar-light bg-info sticky-top'>
+    <nav className='navbar navbar-expand-lg navbar-light bg-white sticky-top'>
     
-            <a className="navbar-brand" href="">
-                <img src={logo} alt="Mest Logo" width="100" height="20" loading='lazy'/>
-            </a>
+        <div className='container'>
+        <Link to="" className="navbar-brand" >
+                <img src={logo} alt="Mest Logo" style={imgStyle} loading='lazy'/>
+            </Link>
 
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target='#navbarContent'>
         <span className="navbar-toggler-icon"></span>
@@ -21,19 +29,32 @@ function Navbar() {
         </div>
  
         
-            <div className="collapse navbar-collapse ml-3   " id='navbarContent'>
+            <div className="collapse navbar-collapse ml-3  " id='navbarContent'>
             <ul className="navbar-nav ">
-                <li className="nav-item dropdown  ">
-                    <a className=" nav-link dropdown-toggle  " role='button' data-toggle='dropdown'  >
+               {
+                   /**
+                    <li className='nav-item'>
+                    <Link to="/" className='nav-link active' role='button'>
                         Jobs
-                    </a>
+                    </Link>
+                </li> 
+                     
+                     **/
+               }
+                <li className="nav-item dropdown  ">
+                    <Link to='' className=" nav-link active dropdown-toggle  " role='button' data-toggle='dropdown'  >
+                     Jobs
+                    </Link>
                     <div className="dropdown-menu">
-                        <a className="dropdown-item">Candidates</a>
+                        <Link to='' className="dropdown-item">Candidates</Link>
+                  
                     </div>
+                   
                 </li>
             </ul>
      </div>
        
+        </div>
 </nav>
    
     
