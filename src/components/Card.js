@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom"
 
 function Card({ card }) {
     
@@ -18,7 +18,12 @@ function Card({ card }) {
                             <span className='bg-light p-1 mr-1 font-weight-light'>Mid Level</span>
                         
                         </div>
-                        <button className='btn btn-outline-primary w-100' >Apply Now</button>
+                        <Link to={{
+                            pathname:`/${card.id}`,
+                            state:{card}
+                        }}>
+                            <button className='btn btn-outline-primary w-100' >Apply Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>
