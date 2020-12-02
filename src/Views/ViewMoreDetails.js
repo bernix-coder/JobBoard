@@ -1,7 +1,14 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Filter from "../components/Filter"
 
-function ViewMoreDetails() {
+function ViewMoreDetails(props) {
+
+    const [card, setCard] = useState({})
+    useEffect(()=>{
+        const cardInfo = props.location.state.card
+        setCard(cardInfo) 
+    },[props.location.state.card])
+
     return (
         <div>
         <div className='container-fluid bg-light ' /*style={{minHeight:"120vh"}}*/ >
@@ -9,6 +16,7 @@ function ViewMoreDetails() {
                       
         <div className='row  '>
             <div className='col-sm-12 col-md-12 col-lg-3 mt-5'>
+                <img src={card.imgSrc} className='card-img mb-3 w-100' height='150px' alt='' />  
                 <div className="row">
                     <Filter />
                 </div>
