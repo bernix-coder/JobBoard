@@ -5,8 +5,7 @@
         "jobType":"Frontend Developer",
         "briefDetail":"We are looking for a skilled developer to manage our site... ",
         "imgSrc": "https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg",
-        "fullDetails":[
-            {
+        "fullDetails": {
                 "jobSum":"We're on a mission to find a motivated, talented and experienced person who is passionate about creating video and motion graphic content, and new media overall, that captures, stimulates and energizes the learning or understanding of others.",
                 "minQualification":"Minimum Qualification: Degree",
                 "experienceLevel":"Experience Level: Graduate trainee",
@@ -36,7 +35,6 @@
                         }
                     ]
             }
-        ]
     
     },
 

@@ -42,11 +42,11 @@ function Navbar() {
                      **/
                }
                 <li className="nav-item dropdown  ">
-                    <Link to='' className=" nav-link active dropdown-toggle  " role='button' data-toggle='dropdown'  >
+                    <Link to='/' className=" nav-link active dropdown-toggle  " role='button' data-toggle='dropdown'  >
                      Jobs
                     </Link>
                     <div className="dropdown-menu">
-                        <Link to='' className="dropdown-item">Candidates</Link>
+                        <Link to='/candidates' className="dropdown-item">Candidates</Link>
                   
                     </div>
                    
